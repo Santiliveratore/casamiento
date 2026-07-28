@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/casamiento/',
+  base: '/',
 
   server: {
     allowedHosts: true
