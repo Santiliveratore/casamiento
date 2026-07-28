@@ -11,8 +11,8 @@ body { margin: 0; }
   display: flex;
   align-items: stretch;
   justify-content: stretch;
-  animation: splashFadeOut 0.7s ease forwards;
-  animation-delay: 1.5s;
+  animation: splashFadeOut 0.9s ease forwards;
+  animation-delay: 3s;
   pointer-events: none;
 }
 
@@ -318,13 +318,202 @@ body { margin: 0; }
 /* Media queries para ajustar posiciones/sizes de overlays diferentes por dispositivo */
 @media (min-width: 600px) {
   /* reglas para PC/tablet grande */
+
+.martup  {
+  position: absolute;
+  left: 9.8%;
+  top: 46.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.martu{
+  position: absolute;
+  left: 7.8%;
+  top: 49.8%;
+  width: 12%;
+  height: 3%;
   
+}
+.antop  {
+  position: absolute;
+  left: 27.8%;
+  top: 46.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.anto{
+  position: absolute;
+  left: 25.8%;
+  top: 49.8%;
+  width: 12%;
+  height: 3%;
+  
+}
+.olgap  {
+  position: absolute;
+  left: 48.4%;
+  top: 46.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+
+.olga{
+  position: absolute;
+  left: 46.4%;
+  top: 49.8%;
+  width: 12%;
+  height: 3%;
+  
+}
+
+.finap  {
+  position: absolute;
+  left: 66.6%;
+  top: 46.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.fina{
+  position: absolute;
+  left: 64.6%;
+  top: 49.8%;
+  width: 12%;
+  height: 3%;
+  
+}
+.marcelap  {
+  position: absolute;
+  left: 9.8%;
+  top: 58.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.marcela{
+  position: absolute;
+  left: 7.8%;
+  top: 62%;
+  width: 12%;
+  height: 3%;
+  
+}
+.cintiap  {
+  position: absolute;
+  left: 27.8%;
+  top: 58.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.cintia{
+  position: absolute;
+  left: 25.8%;
+  top: 62%;
+  width: 16%;
+  height: 3%;
+  
+}
+
+.fanip  {
+  position: absolute;
+  left: 48.6%;
+  top: 58.8%;
+  width: 20%;
+  margin:0;
+  font-size:1.2vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.fani{
+  position: absolute;
+  left: 46.6%;
+  top: 62%;
+  width: 12%;
+  height: 3%;
+  
+}
+.melw{
+  position: absolute;
+  left: 64.6%;
+  top: 62%;
+  width: 12%;
+  height: 3%;
+  
+}
+
+.mariano {
+ position: absolute;
+  left: 25.8%;
+  top: 56%;
+  width: 20%;
+  margin:0;
+  font-size:1.3vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+  
+}  
+  
+.pablo {
+ position: absolute;
+  left: 25.8%;
+  top: 65%;
+  width: 20%;
+ margin:0;
+  font-size:1.3vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}  
+.fabian {
+ position: absolute;
+  left: 25.8%;
+  top: 59%;
+  width: 20%;
+  margin:0;
+  font-size:1.3vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+} 
+.eduardo {
+ position: absolute;
+  left: 25.8%;
+  top: 62%;
+  width: 20%;
+  margin:0;
+  font-size:1.3vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+} 
+
+ 
   /* Estilos individuales para cada link de navegación - puedes ajustar left, top, width, height */
 .mapaalojamiento {
   position: absolute;
 
   left: 8%;
-  top: 31%;
+  top: 41%;
   width: 30%;
   height: 35%;
 
@@ -582,6 +771,198 @@ body { margin: 0; }
 @media (max-width: 599px) {
   /* reglas para móvil */
   
+.martup  {
+  position: absolute;
+  left: 14.8%;
+  top: 40.85%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.martu{
+  position: absolute;
+  left: 9.8%;
+  top: 42.3%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+.antop  {
+  position: absolute;
+  left: 14.8%;
+  top: 53.45%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.anto{
+  position: absolute;
+  left: 9.8%;
+  top: 55%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+.olgap  {
+position: absolute;
+  left: 55%;
+  top: 40.85%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+
+.olga{
+  position: absolute;
+  left: 49.8%;
+  top: 42.3%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+
+.finap  {
+  position: absolute;
+  left: 54.8%;
+  top: 53.55%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.fina{
+  position: absolute;
+  left: 49.8%;
+  top: 55%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+.marcelap  {
+  position: absolute;
+  left: 14.8%;
+  top: 47%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.marcela{
+  position: absolute;
+  left: 9.8%;
+  top: 48.5%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+.cintiap  {
+  position: absolute;
+  left: 14.8%;
+  top: 59.8%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.cintia{
+  position: absolute;
+  left: 9.8%;
+  top: 61.2%;
+  width: 35%;
+  height: 1.5%;
+  
+}
+
+.fanip  {
+  position: absolute;
+  left: 55%;
+  top: 47%;
+  width: 50%;
+  margin:0;
+  font-size:2.7vw;
+  font-weight: regular;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}
+.fani{
+  position: absolute;
+  left: 49.8%;
+  top: 48.5%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+.melw{
+  position: absolute;
+  left: 49.8%;
+  top: 61.2%;
+  width: 28%;
+  height: 1.5%;
+  
+}
+
+
+
+.mariano {
+ position: absolute;
+  left: 35%;
+  top: 54%;
+  width: 50%;
+  margin:0;
+  font-size:2.5vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+  
+}  
+  
+.pablo {
+ position: absolute;
+  left: 35%;
+  top: 60%;
+  width: 50%;
+ margin:0;
+  font-size:2.5vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+}  
+.fabian {
+ position: absolute;
+  left: 35%;
+  top: 56%;
+  width: 50%;
+  margin:0;
+  font-size:2.5vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+} 
+.eduardo {
+ position: absolute;
+  left: 35%;
+  top: 58%;
+  width: 50%;
+  margin:0;
+  font-size:2.5vw;
+  font-family: 'MiTipografia', serif;
+  color: #344831;
+} 
+
+
+
   .mapaalojamiento {
   position: absolute;
 
@@ -819,13 +1200,43 @@ body { margin: 0; }
 
 .rsvp-message {
   position: absolute;
-  left: 10%;
-  top: 95%;
-  width: 80%;
 
+  left: 50%;
+  top: 103%;
+  transform: translateX(-50%);
+
+  padding: 10px 18px;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  color: #4d5f42;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
   text-align: center;
-  font-size: 14px;
-  pointer-events: auto;
+
+  pointer-events: none;
+  z-index: 100;
+
+  animation: fadeInUp .25s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
 }

@@ -104,7 +104,7 @@ export default function App() {
 } else {
   const splashTimer = setTimeout(() => {
     setShowSplash(false);
-  }, 2200);
+  }, 4000);
 
   // Guardá el timer para limpiarlo luego
 }
@@ -134,7 +134,7 @@ if (!isNaN(scroll)) {
 
     const splashTimer = setTimeout(() => {
       setShowSplash(false)
-    }, 2200)
+    }, 4000)
 
     updateCountdown()
     const countdownTimer = setInterval(updateCountdown, 1000)
@@ -301,7 +301,10 @@ if (!isNaN(scroll)) {
   <iframe className="overlay mapaalojamiento" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26785.33284574064!2d-60.666732513499376!3d-32.946610459930994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab15def14419%3A0x97324161fb3ed066!2sCentro%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1785197304476!5m2!1ses!2sar"   loading="lazy" allowFullScreen
   referrerPolicy="no-referrer-when-downgrade"
   title="Mapa del alojamiento"></iframe>
-)}
+  
+)}{apartado.id === 4 && (<p className='overlay mariano'>Mariano: +54 9 341503 3856</p>)}{apartado.id === 4 && (<p className=' overlay fabian'>Fabian: +54 9 3416 89 2897</p>)}{apartado.id === 4 && (<p className=' overlay eduardo'>Eduardo: +54 9 3416 42 0382</p>)}{apartado.id === 4 && (<p className='overlay pablo'>Pablo: +54 9 3413 01 8446</p>)}
+{apartado.id === 5 && (<p className=' overlay martup'>+54 9 3416 11 7041</p>)}{apartado.id === 5 && (<p className=' overlay antop'>+54 9 3413 46 1684</p>)}{apartado.id === 5 && (<p className=' overlay olgap'>+54 9 3416 17 3888</p>)}{apartado.id === 5 && (<p className=' overlay finap'>+54 9 3415 83 8747</p>)}{apartado.id === 5 && (<p className=' overlay marcelap'>+54 9 3415 82 3007</p>)}{apartado.id === 5 && (<p className=' overlay cintiap'>+54 9 3416 11 0005</p>)}{apartado.id === 5 && (<p className=' overlay fanip'>+54 9 3412 26 3782</p>)}
+{apartado.id === 5 && (<a className=' overlay martu' href="https://www.instagram.com/d_vinemakeup/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay anto' href="https://www.instagram.com/antogianotto/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay olga' href="https://www.instagram.com/olgaivanaramirez/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay fina' href="https://www.instagram.com/finaestudio/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay marcela' href="https://www.instagram.com/allmakeupros/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay cintia' href="https://www.instagram.com/cintialentinimkp_studio/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay fani' href="https://www.instagram.com/fanicruzmakeup/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay melw' href="https://www.instagram.com/melw_skinstudio/" target="_blank"></a>)}
             </section>
           )
         ))
