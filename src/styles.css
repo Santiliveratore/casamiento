@@ -225,7 +225,7 @@ body { margin: 0; }
   .drawer-bg {
     position: absolute;
     inset: 0;
-    background-image: url('/Diseno/DESPLEGABLE.webp');
+    background-image: var(--drawer-bg);
     background-size: cover;
     background-position: left center;
     filter: none;

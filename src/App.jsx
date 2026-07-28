@@ -13,12 +13,15 @@ const APARTADOS = [
 
 export default function App() {
   const headerRef = useRef(null)
+  const assetBase = import.meta.env.BASE_URL
   const [headerHeight, setHeaderHeight] = useState(0)
   const [currentPage, setCurrentPage] = useState('home') // 'home' o id del apartado
   const [showSplash, setShowSplash] = useState(true)
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+
+  const assetPath = (path) => `${assetBase}${path.replace(/^\/+/, '')}`
 
   const openApartado = (id) => {
     const url = new URL(window.location.href)
@@ -158,9 +161,9 @@ if (!isNaN(scroll)) {
       {showSplash && currentPage === 'home' && (
         <div className="splash-screen" aria-hidden="true">
           <picture className="splash-picture">
-            <source media="(max-width: 599px)" srcSet="/Diseno/portadacelu.webp" />
+            <source media="(max-width: 599px)" srcSet={assetPath('/Diseno/portadacelu.webp')} />
             <img
-              src="/Diseno/portadapc.webp"
+              src={assetPath('/Diseno/portadapc.webp')}
               alt="Portada inicial"
               className="splash-image"
             />
@@ -177,9 +180,9 @@ if (!isNaN(scroll)) {
           onClick={openDrawer}
         />
         <picture>
-          <source media="(max-width: 599px)" srcSet="/Diseno/headercelu.webp" />
+          <source media="(max-width: 599px)" srcSet={assetPath('/Diseno/headercelu.webp')} />
           <img
-            src="/Diseno/headerpc.webp"
+            src={assetPath('/Diseno/headerpc.webp')}
             alt="Header del sitio"
             className="header-image"
             onLoad={() => {
@@ -212,7 +215,7 @@ if (!isNaN(scroll)) {
 
       {/* Drawer móvil */}
       <div className={`drawer ${drawerOpen ? 'open' : ''}`} aria-hidden={!drawerOpen}>
-        <div className="drawer-bg" />
+        <div className="drawer-bg" style={{ '--drawer-bg': `url(${assetPath('/Diseno/DESPLEGABLE.webp')})` }} />
         <nav className="drawer-nav">
           {navLinks.map((link) => (
             <button
@@ -238,12 +241,12 @@ if (!isNaN(scroll)) {
         >
           <picture>
             {/* versión móvil */}
-            <source media="(max-width: 599px)" srcSet="/Diseno/celular.webp" />
+            <source media="(max-width: 599px)" srcSet={assetPath('/Diseno/celular.webp')} />
             {/* versión PC/tablet */}
-            <source media="(min-width: 600px)" srcSet="/Diseno/pc.webp" />
+            <source media="(min-width: 600px)" srcSet={assetPath('/Diseno/pc.webp')} />
             {/* fallback */}
             <img
-              src="/Diseno/pc.webp"
+              src={assetPath('/Diseno/pc.webp')}
               alt="Diseño completo del sitio"
               className="hero-image"
             />
@@ -287,7 +290,7 @@ if (!isNaN(scroll)) {
             >
               <picture>
                 <img
-                  src={getApartadoImage(apartado.image)}
+                  src={assetPath(getApartadoImage(apartado.image))}
                   alt={apartado.title}
                   className="hero-image"
                 />
