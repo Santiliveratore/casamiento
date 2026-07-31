@@ -269,6 +269,8 @@ if (!isNaN(scroll)) {
             />
           ))}
         <a className='overlay mapa' href="https://maps.app.goo.gl/QCsM195XtaETGa2P6" target="_blank"></a>
+        <a className='overlay capilla' href="https://maps.app.goo.gl/g9X4MGHyU1A3J2We9" target="_blank"></a>
+        <a className='overlay barranca' href="https://maps.app.goo.gl/p4xSQ9iYtZtzxtLG7" target="_blank"></a>
         <button
            className="overlay alias" title="Presionar para copiar alias"
           onClick={copiarAlias}
@@ -302,7 +304,7 @@ if (!isNaN(scroll)) {
   referrerPolicy="no-referrer-when-downgrade"
   title="Mapa del alojamiento"></iframe>
   
-)}{apartado.id === 4 && (<p className='overlay mariano'>Mariano: +54 9 341503 3856</p>)}{apartado.id === 4 && (<p className=' overlay fabian'>Fabian: +54 9 3416 89 2897</p>)}{apartado.id === 4 && (<p className=' overlay eduardo'>Eduardo: +54 9 3416 42 0382</p>)}{apartado.id === 4 && (<p className='overlay pablo'>Pablo: +54 9 3413 01 8446</p>)}
+)}{apartado.id === 4 && (<p className='overlay mariano'>Mariano: +54 9 341503 3856</p>)}{apartado.id === 4 && (<p className=' overlay fabian'>Fabian: +54 9 3416 89 2897</p>)}{apartado.id === 4 && (<p className=' overlay eduardo'>Eduardo: +54 9 3416 42 0382</p>)}{apartado.id === 4 && (<p className='overlay pablo'>Pablo: +54 9 3413 01 8446</p>)}{apartado.id === 4 && (<a className=' overlay estacionamiento' href="https://maps.app.goo.gl/pJsbSgEMXMpBVtmb7?g_st=ic" target="_blank"></a>)}
 {apartado.id === 5 && (<p className=' overlay martup'>+54 9 3416 11 7041</p>)}{apartado.id === 5 && (<p className=' overlay antop'>+54 9 3413 46 1684</p>)}{apartado.id === 5 && (<p className=' overlay olgap'>+54 9 3416 17 3888</p>)}{apartado.id === 5 && (<p className=' overlay finap'>+54 9 3415 83 8747</p>)}{apartado.id === 5 && (<p className=' overlay marcelap'>+54 9 3415 82 3007</p>)}{apartado.id === 5 && (<p className=' overlay cintiap'>+54 9 3416 11 0005</p>)}{apartado.id === 5 && (<p className=' overlay fanip'>+54 9 3412 26 3782</p>)}
 {apartado.id === 5 && (<a className=' overlay martu' href="https://www.instagram.com/d_vinemakeup/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay anto' href="https://www.instagram.com/antogianotto/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay olga' href="https://www.instagram.com/olgaivanaramirez/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay fina' href="https://www.instagram.com/finaestudio/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay marcela' href="https://www.instagram.com/allmakeupros/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay cintia' href="https://www.instagram.com/cintialentinimkp_studio/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay fani' href="https://www.instagram.com/fanicruzmakeup/" target="_blank"></a>)}{apartado.id === 5 && (<a className=' overlay melw' href="https://www.instagram.com/melw_skinstudio/" target="_blank"></a>)}
             </section>
