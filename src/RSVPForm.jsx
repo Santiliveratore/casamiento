@@ -19,7 +19,7 @@ export default function RSVPForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setMessage('No se aceptan más solicitudes.')
+    setMessage('El plazo de inscripción finalizó. Por favor, contactate directamente con los novios.')
   }
 
   return (
