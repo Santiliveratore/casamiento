@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 
-// ⚠️ IMPORTANTE: Reemplaza esta URL con la URL de tu Google Apps Script desplegado
-const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwuwBzOh1NhSDXetdIXFsNFsn5HbGfApDFXUY0Q6ABUIk2Jh0wSR-MWbumkz7up0Sd9Kg/exec'
-
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -10,7 +7,6 @@ export default function RSVPForm() {
     dieta: 'No',
   })
 
-  const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
 
   const handleChange = (e) => {
@@ -21,33 +17,9 @@ export default function RSVPForm() {
     }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
-    setMessage('')
-
-    try {
-      const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      // Con mode: 'no-cors' no podemos leer la respuesta, pero si llega aquí es que se envió
-      setMessage('¡Confirmación enviada! 🎉')
-      setFormData({ nombre: '', apellido: '', dieta: 'No' })
-
-      // Limpiar mensaje después de 3 segundos
-      setTimeout(() => setMessage(''), 3000)
-    } catch (error) {
-      console.error('Error al enviar:', error)
-      setMessage('Error al enviar. Intenta nuevamente.')
-    } finally {
-      setLoading(false)
-    }
+    setMessage('No se aceptan más solicitudes.')
   }
 
   return (
@@ -86,10 +58,9 @@ export default function RSVPForm() {
 
         <button
           type="submit"
-          disabled={loading}
           className="rsvp-button"
         >
-          {loading ? 'Enviando...' : 'Enviar'}
+          Enviar
         </button>
       </form>
 
